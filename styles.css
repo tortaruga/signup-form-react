@@ -26,11 +26,6 @@ main {
   flex-basis: 25rem;
 }
 
-.intro-title {
-  font-size: 3rem;
-  line-height: 120%;
-}
-
 .form-section {
   display: flex;
   flex-direction: column;
@@ -170,6 +165,10 @@ footer {
     flex-wrap: nowrap;
     text-align: left;
     flex-grow: 1;
+  }
+  .intro-title {
+    font-size: 3rem;
+    line-height: 120%;
   }
   .form-section {
     flex-grow: 1;

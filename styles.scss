@@ -42,11 +42,6 @@ main {
     flex-basis: px-to-rem(400, );
 }
 
-.intro-title {
-    font-size: 3rem;
-    line-height: 120%;
-}
-
 .form-section {
     @include flex(column, center, stretch, nowrap);
     gap: 1.5rem;
@@ -176,6 +171,11 @@ footer {
         flex-grow: 1;
     }
 
+    .intro-title {
+        font-size: 3rem;
+        line-height: 120%;
+    }
+    
     .form-section {
         flex-grow: 1; 
     }
