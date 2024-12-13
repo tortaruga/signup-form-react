@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./public/images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+  color: white;
+  padding: 1rem;
+  font-family: poppins, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 43.75rem;
+  margin-inline: auto;
+}
+
+.intro {
+  text-align: center;
+  flex-basis: 25rem;
+}
+
+.intro-title {
+  font-size: 3rem;
+  line-height: 120%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  flex-basis: 25rem;
+}
+
+.free-trial-banner {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0.4rem 0 rgba(62, 60, 73, 0.3);
+}
+
+.bolder {
+  font-weight: 700;
+}
+
+.subscription-form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  box-shadow: 0 0.5rem 0 rgba(62, 60, 73, 0.2);
+}
+
+.input-wrapper div {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.01rem solid hsl(246, 25%, 77%);
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.error-icon {
+  position: absolute;
+  right: 1rem;
+  top: -2.7rem;
+}
+
+.error-msg {
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+  margin-top: 0.3rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  padding-right: 0.4rem;
+}
+
+.input-error::-moz-placeholder {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+.input-error, .input-error::placeholder {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+.submit-btn {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0 #2fb67c;
+  transition: 0.3s;
+}
+.submit-btn:hover {
+  background-color: #2ba671;
+  box-shadow: 0 0rem 0 #2fb67c;
+}
+
+.disclaimer {
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 0;
+  padding-inline: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.terms {
+  color: hsl(0, 100%, 74%);
+  font-weight: 800;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: hsl(248, 32%, 49%);
+  font-weight: 800;
+}
+.attribution a:hover {
+  color: hsl(249, 10%, 26%);
+}
+
+@media screen and (min-width: 57rem) {
+  body {
+    background-image: url(./public/images/bg-intro-desktop.png);
+  }
+  main {
+    max-width: 68.75rem;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: left;
+    flex-grow: 1;
+  }
+  .form-section {
+    flex-grow: 1;
+  }
+  .subscription-form {
+    padding: 2.5rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
