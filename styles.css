@@ -6,7 +6,7 @@ body {
   background: url(./public/images/bg-intro-mobile.png) hsl(0, 100%, 74%);
   color: white;
   padding: 1rem;
-  font-family: poppins, sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 main {
